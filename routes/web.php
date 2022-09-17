@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+#Defindo rota usando Função Middleware
 Route::get('/', function () {
-    return view('welcome');
+    echo 'Seja Bem Vindo!';
 });
