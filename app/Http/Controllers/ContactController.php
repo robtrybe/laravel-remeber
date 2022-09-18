@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function contact(){
+    public function contact(Request $request){
         echo 'Página de Contatos';
     }
 }

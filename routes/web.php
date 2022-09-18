@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +20,6 @@ Route::get('/', function () {
 });
 
 #Definindo rota usando Classes
-Route::get('/contact',[ContactController::class,'contact']);
+Route::get('/home',[HomeController::class,'home']);
+
+Route::get('/contact',[\App\Http\Controllers\ContactController::class,'contact']);
